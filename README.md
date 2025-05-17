@@ -19,7 +19,7 @@ This project simulates the famous **100 prisoners riddle**, demonstrating the ma
 
 ## Strategies Simulated
 
-### 1. 🔁 **Best Strategy (Loop-Following)**
+### 1.**Best Strategy (Loop-Following)**
 Each prisoner:
 - Starts with the box numbered the same as them.
 - Opens the box and checks the number inside.
