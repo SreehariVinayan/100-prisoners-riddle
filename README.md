@@ -1,21 +1,44 @@
-# 100 Prisoners Problem – Simulation in Python
+# 100 Prisoners Problem – Python Simulation
 
-This project simulates the famous **100 prisoners problem**, demonstrating the drastic difference in survival probability between a naive random strategy and the optimal loop-following strategy.
+This project simulates the famous **100 prisoners riddle**, demonstrating the massive survival gap between:
+- A naive **random strategy**
+- The optimal **loop-following (cycle) strategy**
 
-> Based on the strategy explained in the [Veritasium video](https://www.youtube.com/watch?v=iSNsgj1OCLA)
+> 🔗 Based on the [Veritasium video](https://www.youtube.com/watch?v=iSNsgj1OCLA)
 
 ---
 
-# How It Works
+## Problem Summary
 
-- Random Strategy: Each prisoner opens 50 random drawers.
-- Best Strategy : Each prisoner follows a deterministic loop starting from their number.
+- 100 prisoners
+- 100 boxes, each containing a number from 1 to 100
+- Each prisoner can open **50 boxes**
+- If **all** prisoners find their number: they are set free. Otherwise, all prisoners are executed.
 
-> For better understanding of the strategy, watch the Veritasium video. (Link provided above)
 ---
 
-# Results
+## Strategies Simulated
 
-The best strategy consistently shows a ~31% chance of all prisoners surviving.
-Random Strategy consistently shows 0 % chance of all prisioners surviving.
-The Result obtained is similar to the result obtained in the video.
+### 1. 🔁 **Best Strategy (Loop-Following)**
+Each prisoner:
+- Starts with the box numbered the same as them.
+- Opens the box and checks the number inside.
+- Uses that number to open the next box.
+- Repeats for up to 50 tries.
+
+**Why it works:** This exploits permutations and cycles. If all loops are ≤ 50 in length implies a win.
+
+### 2. **Random Strategy**
+Each prisoner:
+- Opens 50 random boxes without repetition.
+
+This leads to near-zero chance of success.
+
+---
+
+## How to Run
+
+### 1. Install Python 3.x  
+### 2. Run the script:
+```bash
+python3 prisoners_strategy.py
