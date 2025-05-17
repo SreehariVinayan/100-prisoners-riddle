@@ -41,4 +41,4 @@ This leads to near-zero chance of success.
 ### 1. Install Python 3.x  
 ### 2. Run the script:
 ```bash
-python3 prisoners_strategy.py
+python3 src/prisoners_strategy.py
