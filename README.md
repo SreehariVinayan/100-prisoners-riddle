@@ -48,7 +48,7 @@ This leads to a near-zero chance of success.
    ```
 3. Run the script:
   ```bash
-  python3 src/prisoners_strategy.py
+  python3 src/prisoner_simulation.py
   ```
 
 ## Sample Output
